@@ -46,7 +46,7 @@ export default function Home() {
     onClick={() => setMenuOpen(!menuOpen)}
     className="text-white text-3xl"
   >
-    MENU
+    ☰
   </button>
 
   {menuOpen && (
