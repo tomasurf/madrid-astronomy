@@ -142,7 +142,7 @@ export default function Home() {
           <img
             src="/ruta-astronomica-02.jpg"
             alt="Senderismo Estelar"
-            className="rounded-3xl w-full h-[600px] object-cover border border-white/10"
+           className="rounded-3xl w-full h-[280px] md:h-[600px] object-cover border border-white/10"
           />
 
           <div>
@@ -227,7 +227,7 @@ export default function Home() {
           <img
             src="/observacion-telescopio.jpg"
             alt="Observación Astronómica"
-            className="rounded-3xl w-full h-[600px] object-cover border border-white/10"
+            className="rounded-3xl w-full h-[280px] md:h-[600px] object-cover border border-white/10"
           />
         </div>
       </section>
@@ -311,7 +311,7 @@ export default function Home() {
         <img
           src="/hero-principal.jpg"
           alt="Senderismo Estelar"
-          className="rounded-3xl w-full h-[550px] object-cover border border-white/10"
+          className="rounded-3xl w-full h-[260px] md:h-[550px] object-cover border border-white/10"
         />
       </div>
 
@@ -365,7 +365,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="Madrid Astronomy"
-                  className="h-[120px] md:h-[420px] w-full object-cover hover:scale-110 transition duration-700"
+                  className="h-[180px] md:h-[420px] w-full object-cover hover:scale-110 transition duration-700"
                 />
               </div>
             ))}
@@ -520,7 +520,7 @@ export default function Home() {
         <img
           src="/hero-principal.jpg"
           alt="Guía astronómico"
-          className="w-full rounded-3xl object-cover h-[650px]"
+         className="w-full rounded-3xl object-cover h-[280px] md:h-[650px]"
         />
       </div>
 
