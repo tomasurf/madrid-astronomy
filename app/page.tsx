@@ -37,7 +37,9 @@ export default function Home() {
             />
             <strong>Madrid Astronomy</strong>
           </div>
-
+<button className="block md:hidden text-white text-3xl z-50">
+  ☰
+</button> 
           <nav className="hidden md:flex gap-8 text-white/70 text-sm">
             <a href="#actividades" className="hover:text-[#d6b46a]">Experiencias</a>
             <a href="#proximas" className="hover:text-[#d6b46a]">Próximas actividades</a>
