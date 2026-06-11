@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 const activities = [
   [
     "Senderismo Estelar",
@@ -25,6 +28,7 @@ const gallery = [
 ];
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <main className="min-h-screen bg-[#020617] text-white">
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#020617]/85 backdrop-blur-xl border-b border-white/10">
@@ -37,9 +41,34 @@ export default function Home() {
             />
             <strong>Madrid Astronomy</strong>
           </div>
-<button className="block md:hidden text-white text-3xl z-50">
-  ☰
-</button> 
+<div className="md:hidden">
+  <button
+    onClick={() => setMenuOpen(!menuOpen)}
+    className="text-white text-3xl"
+  >
+    MENU
+  </button>
+
+  {menuOpen && (
+    <div className="fixed top-24 right-4 w-72 rounded-2xl bg-[#020617] border border-white/20 p-6 shadow-2xl z-[99999]">
+      <a href="#actividades" className="block py-3 text-white/80">
+        Experiencias
+      </a>
+
+      <a href="#proximas" className="block py-3 text-white/80">
+        Próximas actividades
+      </a>
+
+      <a href="#galeria" className="block py-3 text-white/80">
+        Galería
+      </a>
+
+      <a href="#contacto" className="block py-3 text-white/80">
+        Contacto
+      </a>
+    </div>
+  )}
+</div>
           <nav className="hidden md:flex gap-8 text-white/70 text-sm">
             <a href="#actividades" className="hover:text-[#d6b46a]">Experiencias</a>
             <a href="#proximas" className="hover:text-[#d6b46a]">Próximas actividades</a>
