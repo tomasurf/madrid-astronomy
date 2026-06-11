@@ -41,12 +41,13 @@ export default function Home() {
             />
             <strong>Madrid Astronomy</strong>
           </div>
-<div className="md:hidden">
+ <div className="md:hidden relative z-[99999]">
   <button
+    type="button"
     onClick={() => setMenuOpen(!menuOpen)}
-    className="text-white text-3xl"
+    className="relative z-[99999] text-white text-3xl"
   >
-    ☰
+    {menuOpen ? "✕" : "☰"}
   </button>
 
   {menuOpen && (
