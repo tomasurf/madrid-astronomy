@@ -365,7 +365,7 @@ export default function Home() {
                 <img
                   src={image}
                   alt="Madrid Astronomy"
-                  className="h-[180px] md:h-[420px] w-full object-cover hover:scale-110 transition duration-700"
+                  className="h-[120px] md:h-[420px] w-full object-cover hover:scale-110 transition duration-700"
                 />
               </div>
             ))}
